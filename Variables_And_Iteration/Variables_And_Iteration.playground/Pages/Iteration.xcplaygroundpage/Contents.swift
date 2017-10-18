@@ -33,7 +33,7 @@ canvas.defaultLineWidth = 5
 
 // Draw the "rungs" of a ladder
 for y in stride(from: 0, through: 400, by: 50) {
-    
+     
     y
     
     // Draw each rung

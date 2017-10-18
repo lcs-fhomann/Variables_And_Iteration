@@ -17,11 +17,32 @@ import PlaygroundSupport
 
 //: ## Add your code below
 
+//// no fill
+//canvas.drawShapesWithFill = false
+//
+////loop to set horizontal position
+//for x in stride(from: 50, through: 450, by: 100) {
+//
+//    //loop to set vertical postion
+//    for y in stride(from: 450, through: 50, by: -100) {
+//
+//        //draw 5 squares
+//        for size in stride(from: 100, through: 20, by: -20) {
+//
+//
+//            canvas.drawRectangle(centreX: x, centreY: y, width: size, height: size)
+//        }
+//
+//
+//    }
+//
+//}
+
+
 // Create canvas
-let canvas = Canvas(width: 300, height: 300)
+let canvas = Canvas(width: 250, height: 250)
 
-// Below this line, try combining a loop and four statements that draw lines to generate the goal
-
+canvas.drawLine(fromX: <#T##Int#>, fromY: <#T##Int#>, toX: <#T##Int#>, toY: <#T##Int#>, lineWidth: <#T##Int#>, capStyle: <#T##NSBezierPath.LineCapStyle#>)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
