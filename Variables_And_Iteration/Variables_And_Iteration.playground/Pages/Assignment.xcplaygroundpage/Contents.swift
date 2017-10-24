@@ -40,9 +40,82 @@ import PlaygroundSupport
 
 
 // Create canvas
-let canvas = Canvas(width: 250, height: 250)
+let canvas = Canvas(width: 500, height: 500)
+//
+//
+////draw top line (left to right)
+//for x in stride(from: 50, to: 150, by: 100) {
+//    for y in stride(from: 400, to: 500, by: 150) {
+//
+////draw top line (right to right)
+//        for x in stride(from: 150, to: 250, by: 100){
+//            for y in stride(from: 500, to: 400, by: 100){
+//
+////draw mid line (right to left)
+//                for x in stride(from: -50, to: 50, by: 100) {
+//                    for y in stride(from: 350, to: <#T##Strideable#>, by: <#T##Comparable & SignedNumeric#>)
 
-canvas.drawLine(fromX: <#T##Int#>, fromY: <#T##Int#>, toX: <#T##Int#>, toY: <#T##Int#>, lineWidth: <#T##Int#>, capStyle: <#T##NSBezierPath.LineCapStyle#>)
+
+canvas.lineColor = Color.blue
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 500, height: 500)
+
+
+canvas.drawLine(fromX: 0, fromY: 500, toX: 50, toY: 450, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 450, toX: 100, toY: 500, lineWidth: 1)
+canvas.drawLine(fromX: 200, fromY: 500, toX: 250, toY: 450, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 450, toX: 300, toY: 500, lineWidth: 1)
+canvas.drawLine(fromX: 400, fromY: 500, toX: 450, toY: 450, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 450, toX: 500, toY: 500, lineWidth: 1)
+
+
+canvas.drawLine(fromX: 0, fromY: 450, toX: 50, toY: 400, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 400, toX: 150, toY: 500, lineWidth: 1)
+canvas.drawLine(fromX: 150, fromY: 500, toX: 250, toY: 400, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 400, toX: 350, toY: 500, lineWidth: 1)
+canvas.drawLine(fromX: 350, fromY: 500, toX: 450, toY: 400, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 400, toX: 500, toY: 450, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 400, toX: 0, toY: 350, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 400, toX: 150, toY: 300, lineWidth: 1)
+canvas.drawLine(fromX: 150, fromY: 300, toX: 250, toY: 400, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 400, toX: 350, toY: 300, lineWidth: 1)
+canvas.drawLine(fromX: 350, fromY: 300, toX: 450, toY: 400, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 400, toX: 500, toY: 350, lineWidth: 1)
+
+
+canvas.drawLine(fromX: 0, fromY: 300, toX: 50, toY: 350, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 350, toX: 150, toY: 250, lineWidth: 1)
+canvas.drawLine(fromX: 150, fromY: 250, toX: 250, toY: 350, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 350, toX: 350, toY: 250, lineWidth: 1)
+canvas.drawLine(fromX: 350, fromY: 250, toX: 450, toY: 350, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 350, toX: 500, toY: 300, lineWidth: 1)
+canvas.drawLine(fromX: 0, fromY: 200, toX: 50, toY: 150, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 150, toX: 150, toY: 250, lineWidth: 1)
+canvas.drawLine(fromX: 150, fromY: 250, toX: 250, toY: 150, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 150, toX: 350, toY: 250, lineWidth: 1)
+canvas.drawLine(fromX: 350, fromY: 250, toX: 450, toY: 150, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 150, toX: 500, toY: 200, lineWidth: 1)
+
+
+canvas.drawLine(fromX: 0, fromY: 150, toX: 50, toY: 100, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 100, toX: 150, toY: 200, lineWidth: 1)
+canvas.drawLine(fromX: 150, fromY: 200, toX: 250, toY: 100, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 100, toX: 350, toY: 200, lineWidth: 1)
+canvas.drawLine(fromX: 350, fromY: 200, toX: 450, toY: 100, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 100, toX: 500, toY: 150, lineWidth: 1)
+canvas.drawLine(fromX: 0, fromY: 50, toX: 50, toY: 100, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 100, toX: 150, toY: 0, lineWidth: 1)
+canvas.drawLine(fromX: 150, fromY: 0, toX: 250, toY: 100, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 100, toX: 350, toY: 0, lineWidth: 1)
+canvas.drawLine(fromX: 350, fromY: 0, toX: 450, toY: 100, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 100, toX: 500, toY: 50, lineWidth: 1)
+
+
+canvas.drawLine(fromX: 0, fromY: 0, toX: 50, toY: 50, lineWidth: 1)
+canvas.drawLine(fromX: 50, fromY: 50, toX: 100, toY: 0, lineWidth: 1)
+canvas.drawLine(fromX: 200, fromY: 0, toX: 250, toY: 50, lineWidth: 1)
+canvas.drawLine(fromX: 250, fromY: 50, toX: 300, toY: 0, lineWidth: 1)
+canvas.drawLine(fromX: 400, fromY: 0, toX: 450, toY: 50, lineWidth: 1)
+canvas.drawLine(fromX: 450, fromY: 50, toX: 500, toY: 0, lineWidth: 1)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
