@@ -70,15 +70,15 @@ canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 500, height: 500)
 // Horizontal change with x
 
 
-for x in stride(from: 0, through: 400, by: 200) {
-
-    
-    // Downward sloping line
-    canvas.drawLine(fromX: x, fromY: 500, toX: x + 50, toY: 450)
-    // Upward sloping line
-    canvas.drawLine(fromX: x + 50, fromY: 450, toX: x + 100, toY: 500)
-
-}
+//for x in stride(from: 0, through: 400, by: 200) {
+//
+//
+//    // Downward sloping line
+//    canvas.drawLine(fromX: x, fromY: 500, toX: x + 50, toY: 450)
+//    // Upward sloping line
+//    canvas.drawLine(fromX: x + 50, fromY: 450, toX: x + 100, toY: 500)
+//
+//}
 
 
 //canvas.drawLine(fromX: 0, fromY: 450, toX: 50, toY: 400, lineWidth: 1)
@@ -96,13 +96,22 @@ for x in stride(from: 0, through: 400, by: 200) {
 //canvas.drawLine(fromX: 350, fromY: 300, toX: 450, toY: 400, lineWidth: 1)
 //canvas.drawLine(fromX: 450, fromY: 400, toX: 500, toY: 350, lineWidth: 1)
 
-for x in stride(from: 0, through: 400, by: 200) {
-    
-    //upward sloping lines
-    canvas.drawLine(fromX: -50 + x, fromY: 250, toX: x + 50, toY: 350)
- // downwards sloping lines
-    canvas.drawLine(fromX: x + 50, fromY: 350, toX: x + 50 + 100, toY: 250)
+for y in stride(from: 250, through: 550, by: 300) {
+    for x in stride(from: 0, through: 400, by: 200) {
+        
+        //upward sloping lines
+        canvas.drawLine(fromX: -50 + x, fromY: y, toX: x + 50, toY: y + 100)
+        // downwards sloping lines
+        canvas.drawLine(fromX: x + 50, fromY: y + 100, toX: x + 50 + 100, toY: y)
+            //downward sloping lines
+            canvas.drawLine(fromX: -50 + x, fromY: 250, toX: x + 50, toY: 150)
+            //upwards sloping line
+            canvas.drawLine(fromX: x + 50, fromY: 150, toX: x + 150, toY: 250)
+
+    }
+
 }
+
 
 //canvas.drawLine(fromX: 0, fromY: 300, toX: 50, toY: 350, lineWidth: 1)
 //canvas.drawLine(fromX: 50, fromY: 350, toX: 150, toY: 250, lineWidth: 1)
@@ -111,15 +120,7 @@ for x in stride(from: 0, through: 400, by: 200) {
 //canvas.drawLine(fromX: 350, fromY: 250, toX: 450, toY: 350, lineWidth: 1)
 //canvas.drawLine(fromX: 450, fromY: 350, toX: 500, toY: 300, lineWidth: 1)
 
-
-for x in stride(from: 0, through: 400, by: 200) {
-
-    //downward sloping lines
-    canvas.drawLine(fromX: -50 + x, fromY: 250, toX: x + 50, toY: 150)
-    //upwards sloping line
-    canvas.drawLine(fromX: x + 50, fromY: 150, toX: x + 150, toY: 250)
-
-}
+//
 
 
 //canvas.drawLine(fromX: 0, fromY: 150, toX: 50, toY: 100, lineWidth: 1)
